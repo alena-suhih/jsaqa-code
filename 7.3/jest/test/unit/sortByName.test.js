@@ -15,3 +15,15 @@ describe("Books names test suit", () => {
     ]);
   });
 });
+
+describe("Books names test suit", () => {
+  it("Books names do not need to be sorted", () => {
+    expect(
+      sorting.sortByName([
+        "Властелин Колец",
+        "Властелин Колец",
+        "Властелин Колец",
+      ])
+    ).toEqual(["Властелин Колец", "Властелин Колец", "Властелин Колец"]);
+  });
+});
